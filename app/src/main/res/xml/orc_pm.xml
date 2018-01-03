@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <GrxPreferenceCategory android:title="Power Menu Toggles">
+    <GrxCheckBoxPreference android:title="Power Off" android:icon="@drawable/orc_pm_po" android:key="mesa_gapower" android:defaultValue="true" />
+    <GrxCheckBoxPreference android:title="Mobile Data" android:icon="@drawable/orc_pm_md" android:key="mesa_gadata" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Airplane Mode" android:icon="@drawable/orc_pm_am" android:key="mesa_gaairplane" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Reboot" android:icon="@drawable/orc_pm_re" android:key="mesa_gareboot" android:defaultValue="true" />
+    <GrxCheckBoxPreference android:title="Quick Reboot" android:icon="@drawable/orc_pm_qr" android:key="mesa_gaqreboot" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Reboot Recovery" android:icon="@drawable/orc_pm_rr" android:key="mesa_garecovery" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Reboot Download" android:icon="@drawable/orc_pm_rd" android:key="mesa_gardown" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Settings" android:icon="@drawable/orc_pm_se" android:key="mesa_gasettings" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Screenshot" android:icon="@drawable/orc_pm_ss" android:key="mesa_gascreenshot" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Screen Recorder" android:icon="@drawable/orc_pm_sr" android:key="mesa_gascreenrec" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Torch" android:icon="@drawable/orc_pm_to" android:key="mesa_gatorch" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Assistant" android:icon="@drawable/orc_pm_as" android:key="mesa_gaassist" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Voice Assistant" android:icon="@drawable/orc_pm_va" android:key="mesa_gavoicea" android:defaultValue="false" />
+    <GrxCheckBoxPreference android:title="Emergency Mode" android:icon="@drawable/orc_pm_em" android:key="mesa_gaemergency" android:defaultValue="true" />
+    <GrxCheckBoxPreference android:title="Bike Mode" android:icon="@drawable/orc_pm_bm" android:key="mesa_gabike" android:defaultValue="false" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Power Menu Settings">
+    <GrxSwitchPreference android:title="Invert Power Menu Colors" android:key="mesa_pmwhitebg" android:defaultValue="false" android:summaryOn="(Enabled) Changes Power Menu colors to light" android:summaryOff="(Disabled) Changes Power Menu colors to light" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Power Menu Custom Background">
+    <GrxSwitchPreference android:title="Enable Custom Bg" android:key="enable_mesa_custom_gabg" android:defaultValue="false" android:summaryOn="(Enabled) Shows a custom background in Power Menu" android:summaryOff="(Disabled) Shows a custom background in Power Menu" />
+	
+    <GrxSingleSelection grxA_entries="@array/custom_bg_type_entries" android:title="Background Type" android:key="mesa_ga_custom_bg_type" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/custom_bg_type_values" android:dependency="enable_mesa_custom_gabg" />
+    <GrxSeekBar android:title="Background Opacity" android:key="mesa_ga_bg_opacity" android:defaultValue="255" grxMin="0" grxMax="255" grxInter="1" grxPopup="false" android:dependency="enable_mesa_custom_gabg" />
+
+    <GrxPickImage android:title="Select Background image" android:key="mesa_ga_bg_image_uri" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="enable_mesa_custom_gabg" />
+    <GrxSingleSelection grxA_entries="@array/crop_entries" android:title="Set Image Scaling Type" android:key="mesa_ga_bg_crop_type" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/crop_values" android:dependency="enable_mesa_custom_gabg" />
+
+    <GrxColorPicker android:key="mesa_ga_bg_primary_color" android:title="Select Primary Color" grxAlpha="true" grxFlower="false" grxDefColor="0xff000000" android:dependency="enable_mesa_custom_gabg" />
+    <GrxColorPicker android:key="mesa_ga_second_gradient_color" android:title="Select Secondary Color" grxAlpha="true" grxFlower="false" grxDefColor="0xff000000" android:dependency="enable_mesa_custom_gabg" />
+    <GrxSingleSelection grxA_entries="@array/gradient_entries" android:title="Gradient Orientation" android:key="mesa_ga_bg_gradient_orientation" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/gradient_values" android:dependency="enable_mesa_custom_gabg" />
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

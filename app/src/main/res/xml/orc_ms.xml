@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GrxPreferenceCategory android:title="Samsung Music Stock">
+    <GrxSwitchPreference android:title="Enable Custom Noti Color" android:key="mesa_mi_cce" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change Music Player Quick Panel Colors" android:summaryOff="(Disabled) Allows to change Music Player Quick Panel Colors" />
+    <GrxColorPicker android:key="mesa_mi_snc" android:title="Song Name Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff212121" android:dependency="mesa_mi_cce" />
+    <GrxColorPicker android:key="mesa_mi_anc" android:title="Artist Name Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff435463" android:dependency="mesa_mi_cce" />
+    <GrxColorPicker android:key="mesa_mi_pwbc" android:title="Back Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff435463" android:dependency="mesa_mi_cce" />
+    <GrxColorPicker android:key="mesa_mi_ppbc" android:title="Play/Pause Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff435463" android:dependency="mesa_mi_cce" />
+    <GrxColorPicker android:key="mesa_mi_nxbc" android:title="Next Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff435463" android:dependency="mesa_mi_cce" />
+    <GrxColorPicker android:key="mesa_mi_clbc" android:title="Close Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff435463" android:dependency="mesa_mi_cce" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Samsung Music China">
+    <GrxSwitchPreference android:title="Enable Custom Noti Color" android:key="mesa_mc_cce" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change Music Player Quick Panel Colors" android:summaryOff="(Disabled) Allows to change Music Player Quick Panel Colors" />
+    <GrxColorPicker android:key="mesa_mc_snc" android:title="Song Name Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff212121" android:dependency="mesa_mc_cce" />
+    <GrxColorPicker android:key="mesa_mc_anc" android:title="Artist Name Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff515151" android:dependency="mesa_mc_cce" />
+    <GrxColorPicker android:key="mesa_mc_pwbc" android:title="Back Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff515151" android:dependency="mesa_mc_cce" />
+    <GrxColorPicker android:key="mesa_mc_ppbc" android:title="Play/Pause Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff515151" android:dependency="mesa_mc_cce" />
+    <GrxColorPicker android:key="mesa_mc_nxbc" android:title="Next Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff515151" android:dependency="mesa_mc_cce" />
+    <GrxColorPicker android:key="mesa_mc_clbc" android:title="Close Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff515151" android:dependency="mesa_mc_cce" />
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

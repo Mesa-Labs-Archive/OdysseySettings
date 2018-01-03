@@ -29,11 +29,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.mods.grx.settings.GrxPreferenceScreen;
-import com.mods.grx.settings.R;
-import com.mods.grx.settings.Common;
-import com.mods.grx.settings.dlgs.DlgFrGrxNumberPicker;
-import com.mods.grx.settings.prefssupport.info.PrefAttrsInfo;
+import com.odyssey.settings.GrxPreferenceScreen;
+import com.odyssey.settings.R;
+import com.odyssey.settings.Common;
+import com.odyssey.settings.dlgs.DlgFrGrxNumberPicker;
+import com.odyssey.settings.prefssupport.info.PrefAttrsInfo;
 
 
 public class GrxNumberPicker extends Preference implements DlgFrGrxNumberPicker.OnGrxNumberPickerSetListener,

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GrxPreferenceCategory android:title="Notification App Colors">
+    <GrxSwitchPreference android:title="Enable Custom Noti App Color" android:key="unlock_notification_colors" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change Quick Panel Notifications Colors" android:summaryOff="(Disabled) Allows to change Quick Panel Notifications Colors" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="mesa_notiebcc" android:title="Notification Header Icons Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff5c7480" android:dependency="unlock_notification_colors" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="mesa_notiancc" android:title="Notification Header App Name Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff5c7480" android:dependency="unlock_notification_colors" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="mesa_notipbcc" android:title="Notification Progress Bar Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff5c7480" android:dependency="unlock_notification_colors" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="mesa_notiatcc" android:title="Notification Actions Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff5c7480" android:dependency="unlock_notification_colors" grxGkey="mesa_rcnoti" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Notification Customization">
+    <GrxSwitchPreference android:title="Enable Noti Customization" android:key="b_notifications_bg_switch" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change Quick Panel Notifications Colors" android:summaryOff="(Disabled) Allows to change Quick Panel Notifications Colors" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="b_notifications_bg_color" android:title="Notification Background Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="b_notifications_area_bg_color_heads_up" android:title="Notification HeadsUp Background Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+	<GrxSingleSelection grxA_entries="@array/sa_notif_bg_shapes" android:title="Notification Background Shape" android:key="b_notifications_bg_shape" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/sa_notif_bg_values" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="b_notifications_area_bg_color" android:title="Under Noti Background Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="b_notification_gear_color" android:title="Under Noti Settings Icon Background Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="mesa_notidcc" android:title="Notification Divider Color" grxAlpha="true" grxFlower="false" grxDefColor="0x808c8c8c" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="mesa_notitccc" android:title="Notification Time Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff8c8c8c" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="noti_app_title_sec_text_color" android:title="Notification Title Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="notification_summary_text_color" android:title="Notification Summary Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff515151" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="notification_bottom_color" android:title="Notification Bottom Bar Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="pull_block_text_color" android:title="Noti Settings Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    <GrxColorPicker android:key="pull_clear_text_color" android:title="Clear All Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" android:dependency="b_notifications_bg_switch" grxGkey="mesa_rcnoti" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Notification Mods">
+    <GrxSwitchPreference android:title="Show Keyboard Switcher Noti" android:key="mesa_imenoti" android:defaultValue="true" android:summaryOn="(Enabled) Shows IME Switcher Notification in Quick Panel" android:summaryOff="(Disabled) Shows IME Switcher Notification in Quick Panel" />
+    <GrxSwitchPreference android:title="Removable OnGoing Noti" android:key="mesa_ongoingnoti" android:defaultValue="false" android:summaryOn="(Enabled) Allows to remove unremovable notifications" android:summaryOff="(Disabled) Allows to remove unremovable notifications" />
+    <GrxSwitchPreference android:title="Enable HeadsUp Noti" android:key="b_headsup_enabled" android:defaultValue="true" android:summaryOn="(Enabled) Allows to show notifications toast over the screen" android:summaryOff="(Disabled) Allows to show notifications toast over the screen" grxGkey="mesa_rcnoti" />
+	<GrxSeekBar android:title="HeadsUp Noti Time" android:key="b_headsup_time" android:defaultValue="5" grxMax="20" grxInter="1" grxMin="1" grxPopup="false" android:dependency="b_headsup_enabled" grxUni=" sec" grxGkey="mesa_rcnoti" />
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

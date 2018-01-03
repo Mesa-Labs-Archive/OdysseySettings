@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.mods.grx.settings.Common;
-import com.mods.grx.settings.GrxPreferenceScreen;
-import com.mods.grx.settings.R;
-import com.mods.grx.settings.utils.Utils;
+import com.odyssey.settings.Common;
+import com.odyssey.settings.GrxPreferenceScreen;
+import com.odyssey.settings.R;
+import com.odyssey.settings.utils.Utils;
 
 import java.util.regex.Pattern;
 

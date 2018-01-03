@@ -88,7 +88,7 @@
 
 
 
-    <com.mods.grx.settings.sldv.SlideAndDragListView
+    <com.odyssey.settings.sldv.SlideAndDragListView
         android:id="@+id/lv_edit"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
         android:divider="?android:listDivider"
         android:paddingLeft="8dip"
         android:paddingRight="8dip">
-    </com.mods.grx.settings.sldv.SlideAndDragListView>
+    </com.odyssey.settings.sldv.SlideAndDragListView>
 
     <LinearLayout android:orientation="horizontal" android:id="@+id/separador" android:layout_width="match_parent" android:background="#06cccccc" android:layout_height="5dip"/>
 

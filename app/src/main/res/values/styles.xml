@@ -69,9 +69,9 @@
         <item name="tabs_text_color">@color/tabs_text_color_dark</item>
         <item name="tabs_indicator_color">#ffffff</item>
         <item name="sublimetheme">@style/SublimeTheme_dark</item>
-        <item name="colorPrimaryDark">#ff30b1e0</item>
-        <item name="colorPrimary">#ff33b5e5</item>
-        <item name="colorAccent">#ff33b5e5</item>
+        <item name="colorPrimaryDark">#ff6600ff</item>
+        <item name="colorPrimary">#ff6600ff</item>
+        <item name="colorAccent">#ff6600ff</item>
         <item name="tint_arrow_prefs">#ffffffff</item>
         <item name="android:dialogTheme">@style/GrxDialogStyle</item>
         <item name="android:alertDialogTheme">@style/GrxDialogStyle</item>
@@ -80,12 +80,12 @@
         <item name="fab_m_color">?colorAccent</item>
         <item name="fab_m_press">?colorPrimaryDark</item>
         <item name="fab_m_ripple">?colorPrimary</item>
-        <item name="main_bg_color">#ff202020</item>
+        <item name="main_bg_color">#ff1a1a1a</item>
         <item name="pickerColorEditTextColor">0xffffffff</item>
         <item name="pref_category_text_color">?colorPrimaryDark</item>
         <item name="pref_category_bg">#00000000</item>
         <item name="seekbar_popup_bg">?colorAccent</item>
-        <item name="snackbar_bg">#2e5f80</item>
+        <item name="snackbar_bg">#6600ff</item>
 		<item name="prefscreen_arrow_tint">?colorAccent</item>
         <item name="complemnt_accent_color">?colorAccent</item>
         <item name="contrast_text_color">#222222</item>
@@ -93,230 +93,115 @@
 
 
     <style name="SublimeTheme_dark" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="colorPrimary">#ff309ac1</item>
-        <item name="colorPrimaryDark">#ff33b5e5</item>
-        <item name="colorAccent">#ff33b5e5</item>
-        <item name="svn_panel_bg">#ff242424</item>
+        <item name="colorPrimary">#ff6600ff</item>
+        <item name="colorPrimaryDark">#ff6600ff</item>
+        <item name="colorAccent">#ff6600ff</item>
+        <item name="svn_panel_bg">#ff1a1a1a</item>
         <item name="android:listDivider">@color/divider_svn</item>
         <item name="navigationviewstyle">@style/NavigationViewStyle</item>
 		<item name="svn_fab_tint">?colorAccent</item>
     </style>
 
 
-    <style name="Theme.Green.Dark" parent="@style/Theme.Base.Dark">
-      <item name="colorPrimary">#ff26A69A</item>
-        <item name="colorPrimaryDark">#ff009688</item>
-        <item name="colorAccent">#4DB6AC</item>
+    <style name="Theme.Blue.Dark" parent="@style/Theme.Base.Dark">
+      <item name="colorPrimary">#ff0081d8</item>
+        <item name="colorPrimaryDark">#ff0081d8</item>
+        <item name="colorAccent">#0081d8</item>
 		<item name="svn_nav_header_bg">?colorPrimary</item>
 		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="sublimetheme">@style/SublimeTheme_green_dark</item>
-		<item name="snackbar_bg">#ff4d8b85</item>
+		<item name="sublimetheme">@style/SublimeTheme_blue_dark</item>
+		<item name="snackbar_bg">#ff0081d8</item>
 
 	</style>
 	
-	 <style name="SublimeTheme_green_dark" parent="@style/SublimeTheme_dark">
-        <item name="colorPrimary">#ff26A69A</item>
-        <item name="colorPrimaryDark">#4DB6AC</item>
-        <item name="colorAccent">#4DB6AC</item>
-    </style>	
-	
-
-    <style name="Theme.Green.Light" parent="@style/AppTheme">
-        <item name="colorPrimary">#ff26A69A</item>
-        <item name="colorPrimaryDark">#ff009688</item>
-        <item name="colorAccent">#ff4DB6AC</item>
-		<item name="svn_nav_header_bg">?colorPrimary</item>
-		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="sublimetheme">@style/SublimeTheme_green_light</item>
-		<item name="snackbar_bg">#ff4d8b85</item>
-	</style>
-	
-	 <style name="SublimeTheme_green_light" parent="@style/SublimeTheme">
-        <item name="colorPrimary">#ff26A69A</item>
-        <item name="colorPrimaryDark">#ff009688</item>
-        <item name="colorAccent">#ff4DB6AC</item>
+	 <style name="SublimeTheme_blue_dark" parent="@style/SublimeTheme_dark">
+        <item name="colorPrimary">#ff0081d8</item>
+        <item name="colorPrimaryDark">#0081d8</item>
+        <item name="colorAccent">#0081d8</item>
     </style>
-	
-	
-	<style name="Theme.Red.Dark" parent="@style/Theme.Base.Dark" >
-		<item name="colorPrimary">#ffdb4437</item>
-        <item name="colorPrimaryDark">#ffb93221</item>
-        <item name="colorAccent">#fff34c3e</item>
+
+
+    <style name="Theme.Red.Dark" parent="@style/Theme.Base.Dark" >
+		<item name="colorPrimary">#ffdd0000</item>
+        <item name="colorPrimaryDark">#ffdd0000</item>
+        <item name="colorAccent">#ffdd0000</item>
 		<item name="svn_nav_header_bg">?colorPrimary</item>
 		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="snackbar_bg">#ffa6473f</item>
+		<item name="snackbar_bg">#ffdd0000</item>
 		<item name="sublimetheme">@style/SublimeTheme_red_dark</item>
         <item name="complemnt_accent_color">#ffffff</item>
 	</style>
 	
     <style name="SublimeTheme_red_dark" parent="@style/SublimeTheme_dark">
-        <item name="colorPrimary">#ffdb4437</item>
-        <item name="colorPrimaryDark">#ffb93221</item>
-        <item name="colorAccent">#fff34c3e</item>
+        <item name="colorPrimary">#ffdd0000</item>
+        <item name="colorPrimaryDark">#ffdd0000</item>
+        <item name="colorAccent">#ffdd0000</item>
     </style>
 
 
-    <style name="Theme.Red.Light" parent="@style/AppTheme" >	
-	
-			<item name="colorPrimary">#ffdb4437</item>
-        <item name="colorPrimaryDark">#ffb93221</item>
-        <item name="colorAccent">#ffdb4437</item>
-		<item name="svn_nav_header_bg">?colorPrimary</item>
-		<item name="sublimetheme">@style/SublimeTheme_red_light</item>
-		<item name="snackbar_bg">#ffa6473f</item>
-        <item name="complemnt_accent_color">#ba463d</item>
-	
-	</style>
-	
-	<style name="SublimeTheme_red_light" parent="@style/SublimeTheme">
-        <item name="navigationviewstyle">@style/NavigationViewStyle</item>
-        <item name="svn_panel_bg">#fffafafa</item>
-        <item name="colorPrimary">@color/colorPrimary_snv</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark_svn</item>
-        <item name="colorAccent">@color/colorAccent_svn</item>
-    </style>	
-
-	
-	
-	<style name="Theme.Brown.Light" parent="@style/AppTheme">
-        <item name="colorPrimary">#ff8D6E63</item>
-        <item name="colorPrimaryDark">#ff795548</item>
-        <item name="colorAccent">#ff8D6E63</item>
-		<item name="svn_nav_header_bg">?colorPrimary</item>
-		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="sublimetheme">@style/SublimeTheme_brown_light</item>
-		<item name="snackbar_bg">#ff81746f</item>
-	</style>
-	
-	 <style name="SublimeTheme_brown_light" parent="@style/SublimeTheme">
-        <item name="colorPrimary">#ff8D6E63</item>
-        <item name="colorPrimaryDark">#ff795548</item>
-        <item name="colorAccent">#ff8D6E63</item>
-    </style>
-
-
-	
     <style name="Theme.Yellow.Dark" parent="@style/Theme.Base.Dark">
-      <item name="colorPrimary">#ffFBC02D</item>
-        <item name="colorPrimaryDark">#ffFBC02D</item>
-        <item name="colorAccent">#ffFFEB3B</item>
+      <item name="colorPrimary">#ffe6f400</item>
+        <item name="colorPrimaryDark">#ffe6f400</item>
+        <item name="colorAccent">#ffe6f400</item>
 		<item name="svn_nav_header_bg">?colorPrimary</item>
 		<item name="pref_category_text_color">?colorAccent</item>
 		<item name="sublimetheme">@style/SublimeTheme_yellow_dark</item>
-		<item name="snackbar_bg">#ffbe9c47</item>
+		<item name="snackbar_bg">#ffe6f400</item>
         <item name="fab_m_color">?colorPrimaryDark</item>
         <item name="fab_m_press">?colorAccent</item>
         <item name="fab_m_ripple">?colorAccent</item>
-        <item name="seekbar_popup_bg">#F9A825</item>
-        <item name="contrast_text_color">#222222</item>
+        <item name="seekbar_popup_bg">#e6f400</item>
+        <item name="contrast_text_color">#e6f400</item>
 
 	</style>
 	
 	 <style name="SublimeTheme_yellow_dark" parent="@style/SublimeTheme_dark">
-        <item name="colorPrimary">#ffFDD835</item>
-        <item name="colorPrimaryDark">#ffFBC02D</item>
-        <item name="colorAccent">#ffFFEB3B</item>
-		<item name="svn_fab_tint">#FDD835</item>
-    </style>	
-
-    <style name="Theme.Purple.Dark" parent="@style/Theme.Base.Dark">
-      <item name="colorPrimary">#ff9575CD</item>
-        <item name="colorPrimaryDark">#7E57C2</item>
-        <item name="colorAccent">#B39DDB</item>
-		<item name="svn_nav_header_bg">?colorPrimary</item>
-		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="sublimetheme">@style/SublimeTheme_purple_dark</item>
-		<item name="snackbar_bg">#ff6c5f94</item>
-
-	</style>
-	
-	 <style name="SublimeTheme_purple_dark" parent="@style/SublimeTheme_dark">
-        <item name="colorPrimary">#9575CD</item>
-        <item name="colorPrimaryDark">#B39DDB</item>
-        <item name="colorAccent">#B39DDB</item>
-    </style>	
-	
-	
-    <style name="Theme.Purple.Light" parent="@style/AppTheme">
-        <item name="colorPrimary">#ff673AB7</item>
-        <item name="colorPrimaryDark">#ff5E35B1</item>
-        <item name="colorAccent">#ff7E57C2</item>
-		<item name="svn_nav_header_bg">?colorPrimary</item>
-		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="sublimetheme">@style/SublimeTheme_purple_light</item>
-		<item name="snackbar_bg">#ff6c5f94</item>
-	</style>
-	
-	 <style name="SublimeTheme_purple_light" parent="@style/SublimeTheme">
-        <item name="colorPrimary">#ff673AB7</item>
-        <item name="colorPrimaryDark">#ff5E35B1</item>
-        <item name="colorAccent">#ff7E57C2</item>
+        <item name="colorPrimary">#ffe6f400</item>
+        <item name="colorPrimaryDark">#ffe6f400</item>
+        <item name="colorAccent">#ffe6f400</item>
+		<item name="svn_fab_tint">#e6f400</item>
     </style>
 
 
-	
-    <style name="Theme.GreenOrange.Light" parent="@style/AppTheme">
-        <item name="colorPrimary">#ff26A69A</item>
-        <item name="colorPrimaryDark">#ff009688</item>
-        <item name="colorAccent">#FF7043</item>
-		<item name="svn_nav_header_bg">?colorPrimary</item>
-		<item name="sublimetheme">@style/SublimeTheme_greenorange_light</item>
-		<item name="pref_category_text_color">#ff26A69A</item>
-		<item name="snackbar_bg">#ff4d8b85</item>
-		<item name="fab_m_color">#FF5722</item>
-        <item name="fab_m_press">#F4511E</item>
-        <item name="fab_m_ripple">#F4511E</item>
-        <item name="complemnt_accent_color">#26A69A</item>
-	
-	</style>
-	
-	 <style name="SublimeTheme_greenorange_light" parent="@style/SublimeTheme">
-        <item name="colorPrimary">#FF5722</item>
-        <item name="colorPrimaryDark">#F4511E</item>
-        <item name="colorAccent">#FF7043</item>
-		<item name="svn_fab_tint">#009688</item>
-    </style>	
-	
     <style name="Theme.Orange.Dark" parent="@style/Theme.Base.Dark">
-      <item name="colorPrimary">#FF7043</item>
-        <item name="colorPrimaryDark">#FF5722</item>
-        <item name="colorAccent">#FF8A65</item>
+      <item name="colorPrimary">#dd6f00</item>
+        <item name="colorPrimaryDark">#dd6f00</item>
+        <item name="colorAccent">#dd6f00</item>
 		<item name="svn_nav_header_bg">?colorPrimary</item>
 		<item name="pref_category_text_color">?colorAccent</item>
 		<item name="sublimetheme">@style/SublimeTheme_orange_dark</item>
-		<item name="snackbar_bg">#cd5a36</item>
+		<item name="snackbar_bg">#dd6f00</item>
         <item name="fab_m_color">?colorPrimaryDark</item>
         <item name="fab_m_press">?colorAccent</item>
-        <item name="fab_m_ripple">?colorAccent</item>		
-		
-
+        <item name="fab_m_ripple">?colorAccent</item>
 	</style>
 	
 	 <style name="SublimeTheme_orange_dark" parent="@style/SublimeTheme_dark">
-      <item name="colorPrimary">#FF7043</item>
-        <item name="colorPrimaryDark">#FF5722</item>
-        <item name="colorAccent">#FF8A65</item>
-		<item name="svn_fab_tint">#FF8A65</item>
+      <item name="colorPrimary">#dd6f00</item>
+        <item name="colorPrimaryDark">#dd6f00</item>
+        <item name="colorAccent">#dd6f00</item>
+		<item name="svn_fab_tint">#dd6f00</item>
     </style>	
-	
-	
-    <style name="Theme.Orange.Light" parent="@style/AppTheme">
-        <item name="colorPrimary">#FF5722</item>
-        <item name="colorPrimaryDark">#F4511E</item>
-        <item name="colorAccent">#FF7043</item>
+
+
+    <style name="Theme.Green.Dark" parent="@style/Theme.Base.Dark">
+      <item name="colorPrimary">#ff00d83a</item>
+        <item name="colorPrimaryDark">#ff00d83a</item>
+        <item name="colorAccent">#00d83a</item>
 		<item name="svn_nav_header_bg">?colorPrimary</item>
 		<item name="pref_category_text_color">?colorAccent</item>
-		<item name="sublimetheme">@style/SublimeTheme_orange_light</item>
-		<item name="snackbar_bg">#cd5a36</item>
+		<item name="sublimetheme">@style/SublimeTheme_green_dark</item>
+		<item name="snackbar_bg">#ff00d83a</item>
+
 	</style>
 	
-	 <style name="SublimeTheme_orange_light" parent="@style/SublimeTheme">
-        <item name="colorPrimary">#FF5722</item>
-        <item name="colorPrimaryDark">#F4511E</item>
-        <item name="colorAccent">#FF7043</item>
-    </style>	
-		
-
+	 <style name="SublimeTheme_green_dark" parent="@style/SublimeTheme_dark">
+        <item name="colorPrimary">#ff00d83a</item>
+        <item name="colorPrimaryDark">#00d83a</item>
+        <item name="colorAccent">#00d83a</item>
+    </style>
+	
+	
     <!-- common -->
 
 

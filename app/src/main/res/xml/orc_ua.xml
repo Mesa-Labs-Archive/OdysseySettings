@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <GrxPreferenceCategory android:title="Useful Apps">
+    <GrxOpenActivity android:title="A-GPS" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.settings/com.samsung.android.settings.location.AGPSFunctionSwitchList" />
+    <GrxOpenActivity android:title="GPS Satellite Test" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.settings/com.samsung.android.settings.location.SatelliteView" />
+    <GrxOpenActivity android:title="Notifications Log" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.settings/com.android.settings.Settings$NotificationStationActivity" />
+    <GrxOpenActivity android:title="Radio Info" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.settings/com.android.settings.RadioInfo" />
+    <GrxOpenActivity android:title="Usage Statistics" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.settings/com.android.settings.UsageStatsActivity" />
+    <GrxOpenActivity android:title="Android KitKat Easter Egg" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.systemui/com.android.systemui.DessertCase" />
+    <GrxOpenActivity android:title="Android MM Easter Egg" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.android.systemui/com.android.systemui.egg.MLandActivity" />
+    <GrxOpenActivity android:title="Screen Recorder Settings" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.sec.app.screenrecorder/com.sec.app.screenrecorder.activity.SettingsActivity" />
+    <GrxOpenActivity android:title="View Saved Wifi Passwords" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.farproc.wifipassword/com.farproc.wifipassword.MainActivity" />
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

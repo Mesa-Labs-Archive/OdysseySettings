@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.odyssey.settings.fab.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:include="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/observableview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <ImageView android:layout_width="720.0px" android:layout_height="280.0px" android:layout_gravity="center" android:layout_marginTop="4dp" android:layout_marginBottom="8dp"
+                    android:src="@drawable/odyssey_logo"/>
+
+                <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="6dp" android:layout_marginBottom="0dp"
+                    android:src="@drawable/orc_separator"/>
+                <TextView android:layout_marginTop="0dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"  android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="ROM Name" android:textSize="17dp" android:textColor="?colorAccent" android:gravity="left" android:textStyle="bold"/>
+                <TextView android:layout_marginTop="4dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Odyssey Note8" android:textSize="15dp" android:gravity="left" android:textColor="#fafafa"/>
+                <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
+                    android:src="@drawable/orc_separator"/>
+                <TextView android:layout_marginTop="0dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"  android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="ROM Version" android:textSize="17dp" android:textColor="?colorAccent" android:gravity="left" android:textStyle="bold"/>
+                <TextView android:layout_marginTop="4dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="v1" android:textSize="15dp" android:gravity="left" android:textColor="#fafafa"/>
+                <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
+                    android:src="@drawable/orc_separator"/>
+                <TextView android:layout_marginTop="0dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"  android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="ROM Build" android:textSize="17dp" android:textColor="?colorAccent" android:gravity="left" android:textStyle="bold"/>
+                <TextView android:layout_marginTop="4dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="NMF26X.N950FXXU1BQK6" android:textSize="15dp" android:gravity="left" android:textColor="#fafafa"/>
+                <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
+                    android:src="@drawable/orc_separator"/>
+                <TextView android:layout_marginTop="0dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"  android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Odyssey Settings Version" android:textSize="17dp" android:textColor="?colorAccent" android:gravity="left" android:textStyle="bold"/>
+                <TextView android:layout_marginTop="4dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="v1.0" android:textSize="15dp" android:gravity="left" android:textColor="#fafafa"/>
+                <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="0dp" android:layout_marginBottom="0dp"
+                    android:src="@drawable/orc_separator"/>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</com.odyssey.settings.fab.ObservableScrollView>

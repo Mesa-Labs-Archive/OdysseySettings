@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.mods.grx.settings.com.grxmods.settings.GrxAjustes">
+    tools:context="com.odyssey.settings.com.grxmods.settings.GrxAjustes">
     <item
         android:id="@+id/menu_backup"
         android:orderInCategory="100"

@@ -5,32 +5,32 @@
 
 
     <!--def values  - Pay attention!! -->
-    <string name="grx_dir_datos_app">grx</string>
+    <string name="grx_dir_datos_app">odyssey</string>
     <string name="grx_ico_sub_dir">ico_prefs</string>
     <string name="gs_def_sep">|</string>
     <string name="gs_grxBc1">com.grx.mods.SYSTEMUI</string>
     <string name="gs_grxBc2">com.grx.mods.SERVICES</string>
-    <string name="gs_backup_ext">grxbk</string>
+    <string name="gs_backup_ext">odysseybckp</string>
 
 
     <!-- Info fragment tabs -->
 
     <string name="info_about">About Us</string>
-    <string name="info_changelog">ChangeLog</string>
+    <string name="info_changelog">Changelog</string>
     <string name="info_team">Our Team</string>
     <string name="info_credits">Acknowledgments</string>
 
     <!-- info texts -->
 
-    <string name="gs_rom_name">GrxSettings (Your Rom Name)</string>
-    <string name="gs_rom_info_option">Rom Info</string>
+    <string name="gs_rom_name">Odyssey Settings</string>
+    <string name="gs_rom_info_option">ROM Info</string>
 
 
 
     <!-- APP -->
 
-    <string name="app_name">GrxSettings</string>
-    <string name="header_text">GrxSettings</string>
+    <string name="app_name">Odyssey Settings</string>
+    <string name="header_text">Odyssey Settings</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -39,8 +39,8 @@
     <string name="update_item">Update Item</string>
 
 
-    <string name="gs_sync_start">Preferences Syncroinizations started.</string>
-    <string name="gs_sync_end">Preferences Syncroinizations finished.</string>
+    <string name="gs_sync_start">Preferences Syncronizations started.</string>
+    <string name="gs_sync_end">Preferences Syncronizations finished.</string>
 
 
     <string name="gs_remove">Remove</string>
@@ -57,20 +57,13 @@
     <string name="gs_no_access_selection">Nothing selected</string>
 
 
-    <string name="gs_select_theme">Select App Theme</string>
-    <string name="gs_theme_default">Blue (Light)</string>
-    <string name="gs_theme_default_dark">Blue (Dark)</string>
-    <string name="gs_theme_light_tile">Green (Light)</string>
-    <string name="gs_theme_dark_tile">Green (Dark)</string>
-    <string name="gs_theme_light_red">Red (Light)</string>
-    <string name="gs_theme_dark_red">Red (Dark)</string>
-    <string name="gs_theme_light_orange">Orange (Light))</string>
-    <string name="gs_theme_dark_orange">Orange (Dark)</string>
-    <string name="gs_theme_light_purple">Purple (Light))</string>
-    <string name="gs_theme_dark_purple">Purple (Dark)</string>
-    <string name="gs_theme_light_brown">Brown (Light))</string>
-    <string name="gs_theme_dark_yellow">Amber (Dark)</string>
-    <string name="gs_theme_light_green_orange">Gren-Ora. (Light))</string>
+    <string name="gs_select_theme">Select App Main Color</string>
+    <string name="orc_theme1">Purple</string>
+    <string name="orc_theme2">Blue</string>
+    <string name="orc_theme3">Red</string>
+    <string name="orc_theme4">Yellow</string>
+    <string name="orc_theme5">Orange</string>
+    <string name="orc_theme6">Green</string>
 
 
 
@@ -120,7 +113,7 @@
     <string name="gs_actividades">Activities</string>
     <string name="gs_acciones">Actions</string>
     <string name="gs_apps_usu">User Applications</string>
-    <string name="gs_accesos_directos">ShortCuts</string>
+    <string name="gs_accesos_directos">Shortcuts</string>
     <string name="gs_error_acceso_directo">Some problem ocurred while creating the shortcut!!</string>
     <string name="gs_aviso_acceso_no_permitido">Error starting the activity. Some type of access/activities/shortcuts just can be executed from system applications. In other cases, it is not possiblie to launch them!</string>
 
@@ -160,18 +153,17 @@
 
 
     <string name="gs_tit_backup">Preferences Backup</string>
-    <string name="gs_info_backup">Select the new backup name. Do not use extension</string>
+    <string name="gs_info_backup">Select the new backup name. Do not use extensions</string>
     <string name="gs_no_valid_name">No valid backup name</string>
     <string name="gs_backup_ok">Backup was ok! </string>
-    <string name="gs_tit_sobreescribir_backup">Backup already exist</string>
-    <string name="gs_mens_sobreescribir_backup">Bakcup %1$s already exists. Do you want to overwrite it?</string>
-    <string name="gs_no_backups">Backups dir not found</string>
+    <string name="gs_tit_sobreescribir_backup">Backup already exists</string>
+    <string name="gs_mens_sobreescribir_backup">Backup %1$s already exists. Do you want to overwrite it?</string>
+    <string name="gs_no_backups">No backups found</string>
     <string name="gs_err_desconocido_restaurar">Unknown error while restoring..</string>
-    <string name="gs_tit_restaurar">Backup Restoration</string>
-    <string name="gs_mensaje_restaurar">Select the backup to be restored</string>
+    <string name="gs_tit_restaurar">Backup Restore</string>
+    <string name="gs_mensaje_restaurar">Select the backup you wanna restore</string>
     <string name="gs_mens_confirmar_restaurar">Are you sure you want to restore the backup %1$s ?</string>
-    <string name="gs_mens_resultado_restaurar">The backup  %1$s was as successfully restored. %2$d preferences were found</string>
-
+    <string name="gs_mens_resultado_restaurar">The backup %1$s was successfully restored. %2$d preferences restored</string>
 
 
 

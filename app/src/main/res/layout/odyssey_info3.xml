@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.odyssey.settings.fab.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/observableview">
+    <LinearLayout android:layout_width="match_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+
+        <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="6dp" android:layout_marginBottom="0dp"
+            android:src="@drawable/orc_separator"/>
+
+        <TextView android:layout_marginTop="10dp" android:layout_marginBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Useful Links" android:textSize="16dp" android:gravity="center" android:textStyle="bold" android:textColor="?complemnt_accent_color"/>
+
+        <com.odyssey.settings.views.CardViewWithLink grxURL="http://bit.ly/odysseyj5xda"  android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="15dp"  app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?main_bg_color" app:cardElevation="8dp" app:cardPreventCornerOverlap="false" android:clickable="true" android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:layout_gravity="center_vertical"  android:src="@drawable/orc_xda"/>
+                <TextView android:layout_width="wrap_content"  android:layout_height="match_parent"  android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                   android:text="XDA Thread Page"/>
+            </LinearLayout>
+        </com.odyssey.settings.views.CardViewWithLink>
+
+        <com.odyssey.settings.views.CardViewWithLink grxURL="https://facebook.com/mesalabsrom"  android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="15dp"  app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?main_bg_color" app:cardElevation="8dp" app:cardPreventCornerOverlap="false" android:clickable="true" android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:layout_gravity="center_vertical"  android:src="@drawable/orc_fb"/>
+                <TextView android:layout_width="wrap_content"  android:layout_height="match_parent"  android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                   android:text="Mesa Labs Facebook Page"/>
+            </LinearLayout>
+        </com.odyssey.settings.views.CardViewWithLink>
+
+        <com.odyssey.settings.views.CardViewWithLink grxURL="https://t.me/joinchat/Co7sJ0ABRD-B3ryHROsfrg"  android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="15dp"  app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?main_bg_color" app:cardElevation="8dp" app:cardPreventCornerOverlap="false" android:clickable="true" android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:layout_gravity="center_vertical"  android:src="@drawable/orc_tg"/>
+                <TextView android:layout_width="wrap_content"  android:layout_height="match_parent"  android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                   android:text="Mesa Labs Telegram Group"/>
+            </LinearLayout>
+        </com.odyssey.settings.views.CardViewWithLink>
+
+        <com.odyssey.settings.views.CardViewWithLink grxURL="https://t.me/joinchat/AAAAAFH6JiA5ZpxZpH_YZw"  android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="15dp"  app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?main_bg_color" app:cardElevation="8dp" app:cardPreventCornerOverlap="false" android:clickable="true" android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:layout_gravity="center_vertical"  android:src="@drawable/orc_tg"/>
+                <TextView android:layout_width="wrap_content"  android:layout_height="match_parent"  android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                   android:text="Mesa Labs Telegram Channel"/>
+            </LinearLayout>
+        </com.odyssey.settings.views.CardViewWithLink>
+
+        <com.odyssey.settings.views.CardViewWithLink grxURL="https://bitbucket.org/BlackMesa123/quasar_kernel_nn_j5/src"  android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="15dp"  app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?main_bg_color" app:cardElevation="8dp" app:cardPreventCornerOverlap="false" android:clickable="true" android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:layout_gravity="center_vertical"  android:src="@drawable/orc_bb"/>
+                <TextView android:layout_width="wrap_content"  android:layout_height="match_parent"  android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                   android:text="Quasar Kernel Source Code"/>
+            </LinearLayout>
+        </com.odyssey.settings.views.CardViewWithLink>
+
+        <com.odyssey.settings.views.CardViewWithLink grxURL="https://bitbucket.org/BlackMesa123/grxsettings/src"  android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:padding="15dp"  app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?main_bg_color" app:cardElevation="8dp" app:cardPreventCornerOverlap="false" android:clickable="true" android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="8dp" android:layout_gravity="center_vertical"  android:src="@drawable/orc_bb"/>
+                <TextView android:layout_width="wrap_content"  android:layout_height="match_parent"  android:gravity="center_vertical" android:layout_marginLeft="15dp"
+                   android:text="Odyssey Settings Source Code"/>
+            </LinearLayout>
+        </com.odyssey.settings.views.CardViewWithLink>
+
+        <ImageView android:layout_width="720.0px" android:layout_height="69.0px" android:layout_gravity="center" android:layout_marginTop="6dp" android:layout_marginBottom="0dp"
+            android:src="@drawable/orc_separator"/>
+
+    </LinearLayout>
+</com.odyssey.settings.fab.ObservableScrollView>

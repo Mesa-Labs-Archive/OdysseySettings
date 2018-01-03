@@ -26,7 +26,7 @@
         android:paddingBottom="@dimen/grx_altura_contenedor_botones_grupo"
         android:fitsSystemWindows="true"
         android:theme="?sublimetheme"
-        app:snvMenu="@menu/menu_grx_demo"
+        app:snvMenu="@menu/odyssey_menu"
         app:snvBadgeTextColor="?colorAccent"
         app:snvItemBackground="?android:attr/selectableItemBackground"
         app:snvHeaderLayout="@layout/grx_nav_header"

@@ -30,13 +30,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
-import com.mods.grx.settings.GrxPreferenceScreen;
-import com.mods.grx.settings.R;
+import com.odyssey.settings.GrxPreferenceScreen;
+import com.odyssey.settings.R;
 
-import com.mods.grx.settings.dlgs.DlgFrGrxAccess;
-import com.mods.grx.settings.Common;
-import com.mods.grx.settings.prefssupport.info.PrefAttrsInfo;
-import com.mods.grx.settings.utils.Utils;
+import com.odyssey.settings.dlgs.DlgFrGrxAccess;
+import com.odyssey.settings.Common;
+import com.odyssey.settings.prefssupport.info.PrefAttrsInfo;
+import com.odyssey.settings.utils.Utils;
 
 import java.io.File;
 import java.net.URISyntaxException;

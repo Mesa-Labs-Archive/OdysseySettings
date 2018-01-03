@@ -34,12 +34,12 @@ import android.content.ClipboardManager;
 import android.widget.Toast;
 
 
-import com.mods.grx.settings.GrxPreferenceScreen;
-import com.mods.grx.settings.Common;
-import com.mods.grx.settings.R;
-import com.mods.grx.settings.prefssupport.colorpicker.CircleColorDrawable;
-import com.mods.grx.settings.dlgs.DlgFrGrxColorPicker;
-import com.mods.grx.settings.prefssupport.info.PrefAttrsInfo;
+import com.odyssey.settings.GrxPreferenceScreen;
+import com.odyssey.settings.Common;
+import com.odyssey.settings.R;
+import com.odyssey.settings.prefssupport.colorpicker.CircleColorDrawable;
+import com.odyssey.settings.dlgs.DlgFrGrxColorPicker;
+import com.odyssey.settings.prefssupport.info.PrefAttrsInfo;
 
 public class GrxColorPicker extends Preference implements DlgFrGrxColorPicker.OnGrxColorPickerListener,
         GrxPreferenceScreen.CustomDependencyListener{

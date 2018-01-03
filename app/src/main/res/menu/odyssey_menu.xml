@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Text android:icon="@drawable/orc_menu_fw" android:id="@+id/orc_fw" android:title="Framework" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_ls" android:id="@+id/orc_ls" android:title="Lockscreen" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_nt" android:id="@+id/orc_nt" android:title="Notifications" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_pm" android:id="@+id/orc_pm" android:title="Power Menu" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_qp" android:id="@+id/orc_qp" android:title="Quick Panel" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_ra" android:id="@+id/orc_ra" android:title="Recent Apps" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_ms" android:id="@+id/orc_ms" android:title="Samsung Music" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_sb" android:id="@+id/orc_sb" android:title="Status Bar" />
+    <Separator/>
+    <Text android:icon="@drawable/orc_menu_ua" android:id="@+id/orc_ua" android:title="Useful Apps" />
+    <Separator/>
+
+
+</menu>

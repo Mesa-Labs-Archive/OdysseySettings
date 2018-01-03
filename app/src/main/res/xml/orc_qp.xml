@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GrxPreferenceCategory android:title="Quick Panel Custom Background">
+		<GrxSwitchPreference android:title="Show Custom Background" android:key="panelnoti_apply" android:defaultValue="false" android:summaryOn="(Enabled) Shows a Custom Bg behind Quick Panel" android:summaryOff="(Disabled) Shows a Custom Bg behind Quick Panel" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="panelnoti_bgcolor" android:title="Background Color" grxAlpha="true" grxFlower="false" grxDefColor="0xff000000" grxGkey="mesa_rcquickpanel" android:dependency="panelnoti_apply" />
+		<GrxPickImage android:title="Background image" android:key="panelnoti_uri" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="panelnoti_apply" grxGkey="mesa_rcquickpanel" grxSizeX="720" grxSizeY="1280" />
+	</GrxPreferenceCategory>
+    <GrxPreferenceCategory grxDepRule="disable#panelnoti_uri#STRING#NULL" grxHide="true">
+		<GrxSeekBar android:title="Blur effect ratio" android:key="panelnoti_blur" android:defaultValue="0" grxMax="25" grxInter="1" grxMin="0" grxPopup="false" grxUni=" px" android:dependency="panelnoti_apply" grxGkey="mesa_rcquickpanel" />
+		<GrxSeekBar android:title="Image Quality" android:key="panelnoti_quality" android:defaultValue="100" grxMax="100" grxInter="5" grxMin="25" grxPopup="false" grxUni="%" android:dependency="panelnoti_apply" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="panelnoti_tintcolor" android:title="Image Tint Color" grxAlpha="true" grxFlower="false" grxDefColor="0x00FFFFFF" grxGkey="mesa_rcquickpanel" android:dependency="panelnoti_apply" />
+		<GrxSeekBar android:title="Image Opacity" android:key="panelnoti_opacity" android:defaultValue="100" grxMax="100" grxInter="5" grxMin="0" grxPopup="false" grxUni="%" android:dependency="panelnoti_apply" grxGkey="mesa_rcquickpanel" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Bg Color">
+		<GrxSwitchPreference android:title="Customize Quick Panel Bg Color" android:key="expanded_switch_bg" android:defaultValue="false" android:summaryOn="(Enabled) Allows to customize Quick Panel Header Background Color" android:summaryOff="(Disabled) Allows to customize Quick Panel Background Color" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="header" android:title="Quick Panel Background Color" grxAlpha="true" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcquickpanel" android:dependency="expanded_switch_bg" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel S Finder Bar Mods">
+		<GrxSwitchPreference android:title="Show S Finder Bar" android:key="mesa_qpsfb" android:defaultValue="true" android:summaryOn="(Enabled) Shows S Finder Search Bar in Quick Panel" android:summaryOff="(Disabled) Shows S Finder Search Bar in Quick Panel" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="mesa_qpsfbbc" android:title="S Finder Bar Background Color" grxAlpha="true" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcquickpanel" android:dependency="mesa_qpsfb" />
+		<GrxColorPicker android:key="mesa_qpsfbc" android:title="S Finder Bar Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfff5f5f5" grxGkey="mesa_rcquickpanel" android:dependency="mesa_qpsfb" />
+		<GrxColorPicker android:key="mesa_qpsfbtxc" android:title="S Finder Bar Text Color" grxAlpha="true" grxFlower="false" grxDefColor="0x80252525" grxGkey="mesa_rcquickpanel" android:dependency="mesa_qpsfb" />
+		<GrxColorPicker android:key="mesa_qpsfbmic" android:title="S Finder Bar Voice Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="mesa_qpsfb" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Icons and Texts Colors">
+		<GrxSwitchPreference android:title="Customize Quick Panel Icons/Texts Colors" android:key="expanded_icons_colors_switch" android:defaultValue="false" android:summaryOn="(Enabled) Allows to customize Quick Panel Texts/Icons Background Color" android:summaryOff="(Disabled) Allows to customize Quick Panel Texts/Icons Background Color" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="pull_time_text_color" android:title="Header Clock Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+		<GrxColorPicker android:key="pull_ampm_text_color" android:title="Header AM/PM Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+		<GrxColorPicker android:key="pull_date_text_color" android:title="Header Date Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+		<GrxColorPicker android:key="header_icon_color" android:title="Header Settings Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+		<GrxColorPicker android:key="more_icon_color" android:title="Header More Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+		<GrxColorPicker android:key="tileseditor_summary_color" android:title="Tiles Editor Summary Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+		<GrxColorPicker android:key="tileseditor_done_button_color" android:title="Tiles Editor Buttons Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="expanded_icons_colors_switch" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Tiles Colors">
+		<GrxSwitchPreference android:title="Customize Quick Panel Tiles Colors" android:key="b_togg_apply_colors" android:defaultValue="false" android:summaryOn="(Enabled) Allows to customize Quick Panel Tiles Colors" android:summaryOff="(Disabled) Allows to customize Quick Panel Tiles Colors" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="b_togg_color_on" android:title="Enabled Tile Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff22c4ff" grxGkey="mesa_rcquickpanel" android:dependency="b_togg_apply_colors" />
+		<GrxColorPicker android:key="b_togg_color_off" android:title="Disabled Tile Icon Color" grxAlpha="true" grxFlower="false" grxDefColor="0x4d252525" grxGkey="mesa_rcquickpanel" android:dependency="b_togg_apply_colors" />
+		<GrxColorPicker android:key="b_togg_color_dim" android:title="Dim Tile Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff22c4ff" grxGkey="mesa_rcquickpanel" android:dependency="b_togg_apply_colors" />
+		<GrxColorPicker android:key="b_togg_color_div" android:title="Tile Divider Color" grxAlpha="true" grxFlower="false" grxDefColor="0x33252525" grxGkey="mesa_rcquickpanel" android:dependency="b_togg_apply_colors" />
+		<GrxColorPicker android:key="b_togg_color_texto" android:title="Tile Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="b_togg_apply_colors" />
+		<GrxColorPicker android:key="b_togg_color_editor" android:title="Tile Text Color (Tile Editor)" grxAlpha="false" grxFlower="false" grxDefColor="0xff9e9e9e" grxGkey="mesa_rcquickpanel" android:dependency="b_togg_apply_colors" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Brightness Bar Colors">
+		<GrxSwitchPreference android:title="Customize Brightness Bar Colors" android:key="mesa_qpbbce" android:defaultValue="false" android:summaryOn="(Enabled) Allows to customize Quick Panel Brightness Bar Colors" android:summaryOff="(Disabled) Allows to customize Quick Panel Brightness Bar Colors" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="mesa_qpbbbc" android:title="Brightness Bar Bg Color" grxAlpha="true" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="brightness_icon_color" android:title="Brightness Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="mesa_qpbbpbbg" android:title="Brightness Bar Progress Bg Color" grxAlpha="false" grxFlower="false" grxDefColor="0xffc2cbce" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="mesa_qpbbpb" android:title="Brightness Bar Progress Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff56c0e5" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="mesa_qpbbt" android:title="Brightness Bar Thumb Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff79d9fb" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="mesa_qpbbdbg" android:title="Brightness Bar Dual Bg Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfff7c0bd" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="mesa_qpbbdfg" android:title="Brightness Bar Dual Fg Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfff1462f" android:dependency="mesa_qpbbce" />
+		<GrxColorPicker android:key="brightness_more_icon_color" android:title="Brightness More Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff252525" grxGkey="mesa_rcquickpanel" android:dependency="mesa_qpbbce" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Tiles Animation">
+		<GrxSingleSelection grxA_entries="@array/qs_tile_animation_style_entries" android:title="QS Panel Animation" android:key="anim_tile_style" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/qs_tile_animation_style_values" />
+		<GrxSingleSelection grxA_entries="@array/qs_tile_animation_duration_entries" android:title="QS Panel Animation Speed" android:key="anim_tile_duration" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="1500" grxA_values="@array/qs_tile_animation_duration_values" />
+		<GrxSingleSelection grxA_entries="@array/qs_tile_animation_interpolator_entries" android:title="QS Panel Interpolator" android:key="anim_tile_interpolator" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/qs_tile_animation_interpolator_values" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Data Usage View Mods">
+		<GrxSwitchPreference android:title="Show Data Usage View" android:key="data_usage_visibility" android:defaultValue="true" android:summaryOn="(Enabled) Shows Data Usage View in Quick Panel" android:summaryOff="(Disabled) Shows Data Usage View in Quick Panel" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="data_usage_view" android:title="Data Usage View Bg Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcquickpanel" android:dependency="data_usage_visibility" />
+		<GrxColorPicker android:key="data_usage_text_color" android:title="Data Usage Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff1b4e78" grxGkey="mesa_rcquickpanel" android:dependency="data_usage_visibility" />
+		<GrxSingleSelection grxA_entries="@array/data_usage_gravity_entries" android:title="Data Usage Text Position" android:key="data_usage_text_gravity" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="data_usage_visibility" android:defaultValue="0" grxGkey="mesa_rcquickpanel" grxA_values="@array/data_usage_gravity_values" />
+		<GrxSingleSelection grxA_entries="@array/data_usage_text_style_entries" android:title="Data Usage Text Style" android:key="data_usage_view_text_style" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="data_usage_visibility" android:defaultValue="0" grxGkey="mesa_rcquickpanel" grxA_values="@array/data_usage_text_style_values" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Quick Panel Shortcuts Mod">
+		<GrxSwitchPreference android:title="Show Quick Panel Shortcuts" android:key="b_qp_show" android:defaultValue="false" android:summaryOn="(Enabled) Shows Shortcuts under Quick Panel" android:summaryOff="(Disabled) Shows Shortcuts under Quick Panel" grxGkey="mesa_rcquickpanel" />
+        <GrxMultiAccess android:title="Choose Apps/Shortcuts to show" android:key="b_qp_shortcuts" android:summary="Select panel items and their order" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="b_qp_show" grxShc="true" grxApps="true" grxAct="true" grxC_Act="false" grxGkey="mesa_rcquickpanel" />
+		<GrxSeekBar android:title="Item Width" android:key="b_gp_width_scale" android:defaultValue="100" grxMax="165" grxInter="1" grxMin="50" grxPopup="false" grxUni=" dp" android:dependency="b_qp_show" grxGkey="mesa_rcquickpanel" />
+		<GrxColorPicker android:key="b_gp_bgcolor" android:title="Background Color" grxAlpha="true" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcquickpanel" android:dependency="b_qp_show" />
+		<GrxColorPicker android:key="b_gp_circlecolor_press" android:title="Circle Pressed Color" grxAlpha="true" grxFlower="false" grxDefColor="0x80cccccc" grxGkey="mesa_rcquickpanel" android:dependency="b_qp_show" />
+		<GrxColorPicker android:key="b_gp_circlecolor" android:title="Circle Normal Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfff5f7f8" grxGkey="mesa_rcquickpanel" android:dependency="b_qp_show" />
+		<GrxColorPicker android:key="b_gp_textcolor" android:title="Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xff1e4e78" grxGkey="mesa_rcquickpanel" android:dependency="b_qp_show" />
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

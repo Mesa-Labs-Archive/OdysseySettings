@@ -7,7 +7,7 @@
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
                 android:background="?main_bg_color"
-                tools:context="com.mods.grx.settings.GrxSettingsActivity">
+                tools:context="com.odyssey.settings.GrxSettingsActivity">
 
 
 
@@ -31,7 +31,7 @@
 
             <include layout="@layout/grx_nav_content"/>
 
-                <com.mods.grx.settings.fab.FloatingActionButton
+                <com.odyssey.settings.fab.FloatingActionButton
                     android:id="@+id/fab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                     fab:fab_colorPressed="?fab_m_press"
                     fab:fab_colorRipple="?fab_m_ripple"
                     fab:fab_type="normal"
-                    app:layout_behavior="com.mods.grx.settings.fab.FABBehavIor"/>
+                    app:layout_behavior="com.odyssey.settings.fab.FABBehavIor"/>
 
 </android.support.design.widget.CoordinatorLayout>
 

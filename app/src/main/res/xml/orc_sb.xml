@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GrxPreferenceCategory android:title="Status Bar Colors">
+		<GrxColorPicker android:key="global_sb_color" android:title="Select Global Icons Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" />
+		<GrxCheckBoxPreference android:title="Enable Custom Icons Color" android:key="is_global_sb_color" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change statusbar icons color" android:summaryOff="(Disabled) Allows to change statusbar icons color" />
+		<GrxColorPicker android:key="sb_icon_color" android:title="Status Bar Icons Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="notification_icons_color" android:title="Noti Icons Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="bt_mode_color" android:title="Bluetooth Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="db_mode_color" android:title="D.B. Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="wifi_signal_color" android:title="Wifi Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="wifi_act_color" android:title="Wifi Icon Color (Arrows)" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="airplane_mode_color" android:title="Airplane Mode Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="mobile_signal_color" android:title="Signal Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="mobile_type_color" android:title="Signal Type Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="mobile_type_arrows_color" android:title="Signal Arrows Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="mobile_roaming_color" android:title="Roaming Icon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+		<GrxColorPicker android:key="battery_text_color" android:title="Battery Percentage Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_global_sb_color" />
+    </GrxPreferenceCategory>
+    <GrxPreferenceCategory android:title="Dynamic Status Bar">
+		<GrxSwitchPreference android:title="Enable Dynamic Status Bar" android:key="dynamic_toggle" android:defaultValue="false" android:summaryOn="(Enabled) Shows a custom bg in status bar" android:summaryOff="(Disabled) Shows a custom bg in status bar" />
+		<GrxSingleSelection grxA_entries="@array/dsb_gradient_filter_entries" android:title="Gradient Type" android:key="dynamic_status_bar_gradient_state" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="2" grxA_values="@array/dsb_gradient_filter_values" android:dependency="dynamic_toggle" />
+		<GrxSingleSelection grxA_entries="@array/dsb_gradient_filter_entries" android:title="Gradient Darkening" android:key="dynamic_status_bar_filter_state" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="2" grxA_values="@array/dsb_gradient_filter_values" android:dependency="dynamic_toggle" />
+		<GrxSeekBar android:title="Gradient Darkening Intensity" android:key="dynamic_status_bar_filter_value" android:defaultValue="10" grxMax="70" grxInter="1" grxMin="0" grxPopup="false" android:dependency="dynamic_toggle" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Custom Logo">
+		<GrxSwitchPreference android:title="Enable Custom Logo" android:key="z_logo_hide" android:defaultValue="true" android:summaryOn="(Enabled) Shows a custom logo in status bar" android:summaryOff="(Disabled) Shows a custom logo in status bar" />
+		<GrxSingleSelection grxA_entries="@array/custom_logo_type_entries" android:title="Select Custom Logo" android:key="z_logo_type" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="2" grxA_values="@array/custom_logo_type_values" android:dependency="z_logo_hide" />
+		<GrxPickImage android:title="Select Logo from Gallery" android:key="z_logo_image_uri" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="z_logo_hide" />
+		<GrxColorPicker android:key="z_logo_Color" android:title="Select Logo Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="z_logo_hide" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Custom Text">
+		<GrxSwitchPreference android:title="Enable Custom Text" android:key="b_joss_custom_text" android:defaultValue="true" android:summaryOn="(Enabled) Shows a custom text in status bar" android:summaryOff="(Disabled) Shows a custom text in status bar" grxGkey="mesa_rcstatusbar" />
+		<GrxEditText android:title="Enter Custom Text" android:key="b_joss_custom_text_enter" android:summary="%" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="Odyssey Note8" grxGkey="mesa_rcstatusbar" android:dependency="b_joss_custom_text" />
+		<GrxSeekBar android:title="Select Text Size" android:key="b_joss_custom_text_size" android:defaultValue="14" grxMax="22" grxInter="1" grxMin="0" grxPopup="false" grxUni=" dp" grxGkey="mesa_rcstatusbar" android:dependency="b_joss_custom_text" />
+		<GrxSingleSelection android:title="Select Font Style" android:key="b_joss_custom_text_font" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_entries="@array/clock_font_style_entries" grxA_values="@array/clock_font_style_values" grxGkey="mesa_rcstatusbar" android:dependency="b_joss_custom_text" />
+		<GrxColorPicker android:title="Select Text Color (Dark bg)" android:key="b_joss_custom_text_color_dark" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcstatusbar" android:dependency="b_joss_custom_text" />
+		<GrxColorPicker android:title="Select Text Color (Light bg)" android:key="b_joss_custom_text_color_light" grxAlpha="false" grxFlower="false" grxDefColor="0xff686868" grxGkey="mesa_rcstatusbar" android:dependency="b_joss_custom_text" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Notification Icons">
+		<GrxSwitchPreference android:title="Force Max Number of Icons" android:key="b_force_nof_notiicons" android:defaultValue="false" android:summaryOn="(Enabled) Allows to set max number of noti icons in statusbar" android:summaryOff="(Disabled) Allows to set max number of noti icons in statusbar" grxGkey="mesa_rcstatusbar" />
+		<GrxSeekBar android:title="Set Max Number of Icons" android:key="b_forced_notiicons" android:defaultValue="3" grxMax="20" grxInter="1" grxMin="1" grxPopup="false" grxUni=" icons" grxGkey="mesa_rcstatusbar" android:dependency="b_force_nof_notiicons" />
+		<GrxMultipleSelection android:title="Set status bar icons to hide" android:key="b_grx_icon_blacklist" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="" grxSep="," grxA_entries="@array/hidden_icons_options" grxA_values="@array/hidden_icons_values" grxGkey="mesa_rcstatusbar" />
+		<GrxSingleSelection grxA_entries="@array/signal_position_entries" android:title="Set Signal Icons Position" android:key="is_signal_right_to_left" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/signal_position_values" grxGkey="mesa_rcstatusbar" />
+		<GrxCheckBoxPreference android:title="Set 4G data label to LTE" android:key="lte_4g_view" android:defaultValue="0" android:summaryOn="(Enabled) Changes 4G data text label to LTE" android:summaryOff="(Disabled) Changes 4G data text label to LTE" grxGkey="mesa_rcstatusbar" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Network Traffic Speed Mod">
+		<GrxSingleSelection grxA_entries="@array/traffic_state_items" android:title="Display Traffic Info" android:key="network_traffic_state" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" dependentValue="0" grxA_values="@array/traffic_state_values" />
+		<GrxCheckBoxPreference android:title="Display data in Bytes" android:key="network_traffic_unit" android:defaultValue="false" android:dependency="network_traffic_state" />
+		<GrxCheckBoxPreference android:title="Show Traffic Arrows" android:key="network_traffic_show_arrows" android:defaultValue="false" android:dependency="network_traffic_state" />
+		<GrxSingleSelection grxA_entries="@array/arrow_position_entries" android:title="Traffic Arrows Position" android:key="network_traffic_arrows_position" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="1" android:dependency="network_traffic_show_arrows" grxA_values="@array/arrow_position_values" />
+		<GrxCheckBoxPreference android:title="Autohide on low traffic" android:key="network_traffic_autohide" android:defaultValue="false" android:dependency="network_traffic_state" />
+		<GrxSeekBar android:title="Autohide threshold" android:key="network_traffic_threshold" android:defaultValue="10" grxMax="100" grxInter="1" grxMin="0" grxPopup="false" grxUni=" kb" android:dependency="network_traffic_state" />
+		<GrxSingleSelection grxA_entries="@array/traffic_style_entries" android:title="Font Style" android:key="network_traffic_text_style" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" android:dependency="network_traffic_state" grxA_values="@array/traffic_style_entry_values" />
+		<GrxSeekBar android:title="Text Size" android:key="network_traffic_scale" android:defaultValue="10" grxMax="10" grxInter="1" grxMin="0" grxPopup="false" grxUni=" dp" android:dependency="network_traffic_state" />
+		<GrxSwitchPreference android:title="Customize colors" android:key="network_traffic_global_color" android:defaultValue="false" android:dependency="network_traffic_state" />
+		<GrxColorPicker android:title="Global Color" android:key="network_traffic_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="network_traffic_global_color" />
+		<GrxColorPicker android:title="Upload Text Color" android:key="network_traffic_upload_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="network_traffic_global_color" />
+		<GrxColorPicker android:title="Download Text Color" android:key="network_traffic_download_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="network_traffic_global_color" />
+		<GrxColorPicker android:title="Traffic Arrows Color" android:key="network_traffic_arrow_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="network_traffic_global_color" />
+	</GrxPreferenceCategory>
+
+
+    <GrxPreferenceCategory android:title="Battery Mods">
+		<GrxSwitchPreference android:title="Show Stock Battery" android:key="b_stbatt_show" android:defaultValue="false" android:summaryOn="(Enabled) Shows Stock Battery in status bar" android:summaryOff="(Disabled) Shows Stock Battery in status bar" grxGkey="mesa_rcstatusbar" />
+		<GrxColorPicker android:title="Select Stock Battery Color" android:key="b_stbatt_main_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcstatusbar" android:dependency="b_stbatt_show" />
+		<GrxSwitchPreference android:title="Show 3Minit Battery" android:key="minit_battery_visible" android:defaultValue="true" android:summaryOn="(Enabled) Shows 3Minit Battery in status bar" android:summaryOff="(Disabled) Shows 3Minit Battery in status bar" />
+		<GrxOpenActivity android:title="Open 3Minit Battery Settings" android:widgetLayout="@layout/widget_accent_arrow" grxActivity="com.three.minit.minitbatterysettings.free/com.three.minit.minitbatterysettings.MainActivity" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Battery Bar Mod">
+		<GrxSwitchPreference android:title="Show Battery Bar" android:key="is_batterybar_switch" android:defaultValue="false" android:summaryOn="(Enabled) Shows a bar that indicates battery level in status bar" android:summaryOff="(Disabled) Shows a bar that indicates battery level in status bar" />
+		<GrxSeekBar android:title="Battery Bar Thickness" android:key="is_batterybar_scald" android:defaultValue="1" grxMax="10" grxInter="1" grxMin="1" grxPopup="false" android:dependency="is_batterybar_switch" />
+		<GrxSwitchPreference android:title="Battery Bar Charging Animation" android:key="is_batterybar_animated_view" android:defaultValue="true" android:summaryOn="(Enabled) Animate the battery bar when phone is charging" android:summaryOff="(Disabled) Animate the battery bar when phone is charging" android:dependency="is_batterybar_switch" />
+		<GrxSingleSelection grxA_entries="@array/anim_strings" android:title="Charging Animation Type" android:key="is_batterybar_animtype_view" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/anim_values" android:dependency="is_batterybar_animated_view" />
+		<GrxSingleSelection grxA_entries="@array/pulse_strings" android:title="Charging Animation Pulse Type" android:key="is_batterybar_pulse_view" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/pulse_values" android:dependency="is_batterybar_animated_view" />
+		<GrxColorPicker android:title="Battery Bar Global Color" android:key="is_batterybar_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="is_batterybar_switch" />
+		<GrxCheckBoxPreference android:title="Enable Battery Bar Status Colors" android:key="is_batterybar_autocolor_switch" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change battery bar status color" android:summaryOff="(Disabled) Allows to change battery bar status color" android:dependency="is_batterybar_switch" />
+		<GrxColorPicker android:title="Battery Bar Low Level Color" android:key="is_batterybar_autolow_color" grxAlpha="false" grxFlower="false" grxDefColor="0xffd30000" android:dependency="is_batterybar_autocolor_switch" />
+		<GrxColorPicker android:title="Battery Bar Medium Level Color" android:key="is_batterybar_automedium_color" grxAlpha="false" grxFlower="false" grxDefColor="0xffffe500" android:dependency="is_batterybar_autocolor_switch" />
+		<GrxColorPicker android:title="Battery Bar Regular Level Color" android:key="is_batterybar_autoregular_color" grxAlpha="false" grxFlower="false" grxDefColor="0xff00ff22" android:dependency="is_batterybar_autocolor_switch" />
+		<GrxColorPicker android:title="Battery Bar Charging Color" android:key="is_batterybar_autocharging_color" grxAlpha="false" grxFlower="false" grxDefColor="0xff2ed300" android:dependency="is_batterybar_autocolor_switch" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Clock and Date">
+		<GrxSwitchPreference android:title="Enable Clock and Date" android:key="enable_clock" android:defaultValue="true" android:summaryOn="(Enabled) Shows clock and date in status bar" android:summaryOff="(Disabled) Shows clock and date in status bar" />
+		<GrxCheckBoxPreference android:title="Show Clock Seconds" android:key="enable_second" android:defaultValue="false" android:summaryOn="(Enabled) Seconds shown" android:summaryOff="(Disabled) Seconds hidden" android:dependency="enable_clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_format_entries" android:title="Select Clock Format" android:key="statusbar_clock_format" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="1" grxA_values="@array/clock_format_values" />
+		<GrxCheckBoxPreference android:title="Uppercase Letter Clock Format" android:key="normal_upper" android:defaultValue="false" android:summaryOn="(Enabled) Uses uppercase letters in clock" android:summaryOff="(Disabled) Uses uppercase letters in clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_style_entries" android:title="Set Clock Position" android:key="clock_positions" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/clock_style_values" android:dependency="enable_clock" />
+		<GrxSeekBar android:title="Select Clock Size" android:key="clock_scaling" android:defaultValue="14" grxMax="20" grxInter="1" grxMin="0" grxPopup="false" grxUni=" dp" android:dependency="enable_clock" />
+		<GrxColorPicker android:title="Select Clock Text Color" android:key="clock_color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" android:dependency="enable_clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_font_style_entries" android:title="Set Clock Font" android:key="clock_fonts" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/clock_font_style_values" android:dependency="enable_clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_ampm_entries" android:title="Set Clock AM/PM Style" android:key="am_pm_style" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="1" grxA_values="@array/clock_ampm_values" android:dependency="enable_clock" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Statusbar Date Mods">
+		<GrxSingleSelection grxA_entries="@array/clock_date_display_entries" android:title="Set Date Display Style" android:key="sb_clock_date_format" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/clock_date_display_values" android:dependency="enable_clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_date_position_entries" android:title="Set Date Position" android:key="date_positions" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/clock_date_position_values" android:dependency="enable_clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_date_style_entries" android:title="Set Date Style" android:key="sb_date_style" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/clock_date_style_values" android:dependency="enable_clock" />
+		<GrxSingleSelection grxA_entries="@array/clock_date_format_entries_values" android:title="Set Date Format" android:key="sb_date_format" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="dd/MM/yy" grxA_values="@array/clock_date_format_entries_values" android:dependency="enable_clock" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Extra Mods">
+		<GrxSwitchPreference android:title="Enable Brightness Control via SB" android:key="b_brightness_control" android:defaultValue="false" android:summaryOn="(Enabled) Allows to set brightness via sliding over statusbar" android:summaryOff="(Disabled) Allows to set brightness via sliding over statusbar" grxGkey="mesa_rcstatusbar" />
+		<GrxSwitchPreference android:title="Single swipe for Quick Panel" android:key="tweaks_qs_pulldown" android:defaultValue="false" android:summaryOn="(Enabled) Allows to pulldown quick panel toggles by swiping once on the right" android:summaryOff="(Disabled) Allows to pulldown quick panel toggles by swiping once on the right" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Virtual Buttons (set one button on position)">
+    <PreferenceScreen android:title="Recent Button">
+        <GrxCheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornertask" android:defaultValue="false" />
+        <GrxCheckBoxPreference android:title="Center" android:key="cocoyaya_centertask" android:defaultValue="false" />
+        <GrxCheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornertask" android:defaultValue="false" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Home Button">
+        <GrxCheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornerhome" android:defaultValue="false" />
+        <GrxCheckBoxPreference android:title="Center" android:key="cocoyaya_centerhome" android:defaultValue="false" />
+        <GrxCheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornerhome" android:defaultValue="false" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Lock Button">
+        <GrxCheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornerlock" android:defaultValue="false" />
+        <GrxCheckBoxPreference android:title="Center" android:key="cocoyaya_centerlock" android:defaultValue="false" />
+        <GrxCheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornerlock" android:defaultValue="true" />
+    </PreferenceScreen>
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

@@ -23,10 +23,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
-import com.mods.grx.settings.GrxPreferenceScreen;
-import com.mods.grx.settings.Common;
-import com.mods.grx.settings.prefssupport.info.PrefAttrsInfo;
-
+import com.odyssey.settings.GrxPreferenceScreen;
+import com.odyssey.settings.Common;
+import com.odyssey.settings.prefssupport.info.PrefAttrsInfo;
 
 public class GrxSwitchPreference extends SwitchPreference implements GrxPreferenceScreen.CustomDependencyListener {
 
@@ -51,7 +50,6 @@ public class GrxSwitchPreference extends SwitchPreference implements GrxPreferen
 
     private void ini_preference(Context c, AttributeSet att){
         myPrefAttrsInfo = new PrefAttrsInfo(c, att, getTitle(), getSummary(),getKey());
-
      }
 
 

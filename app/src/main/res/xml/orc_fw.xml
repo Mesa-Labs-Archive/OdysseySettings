@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GrxPreferenceCategory android:title="Framework Mods">
+    <GrxSwitchPreference android:title="High Audio Volume Warning" android:key="mesa_havw" android:defaultValue="false" android:summaryOn="(Enabled) Shows the High Audio Volume Warning" android:summaryOff="(Disabled) Shows the High Audio Volume Warning" />
+    <GrxSwitchPreference android:title="USB Plugged Wake Up" android:key="mesa_usbwake" android:defaultValue="false" android:summaryOn="(Enabled) Wakes Up the Screen when USB is Plugged" android:summaryOff="(Disabled) Wakes Up the Screen when USB is Plugged" />
+    <GrxSingleSelection grxA_entries="@array/immersive_entries" android:title="Immersive Mode (Fullscreen)" android:key="policy_control" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="immersive.full" grxA_values="@array/immersive_values" />
+    <GrxSwitchPreference android:title="Enable Screenshot FLAG_SECURE" android:key="mesa_ssdrm" android:defaultValue="false" android:summaryOn="(Enabled) Blocks screenshot in apps that have FLAG_SECURE enabled" android:summaryOff="(Disabled) Blocks screenshot in apps that have FLAG_SECURE enabled" />
+    </GrxPreferenceCategory>
+    <GrxPreferenceCategory android:title="Animations Mods">
+    <GrxSingleSelection grxA_entries="@array/zoniklist_animation_entries" android:title="Custom ListView Animation" android:key="listview_animation" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="0" grxA_values="@array/zoniklist_animation_values" />
+    <GrxSingleSelection grxA_entries="@array/toast_animation_entries" android:title="Custom Toast Animation" android:key="toast_animation" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="1" grxA_values="@array/toast_animation_values" />
+    </GrxPreferenceCategory>
+    <GrxPreferenceCategory android:title="USB Animation">
+    <GrxSwitchPreference android:title="Show USB Animation" android:key="b_joss_anima_usb" android:defaultValue="true" android:summaryOn="(Enabled) Shows an Animated Circle on screen when cable is plugged" android:summaryOff="(Disabled) Shows an Animated Circle on screen when cable is plugged" grxGkey="mesa_rcusb" />
+	<GrxColorPicker android:key="b_joss_color_anima_usb" android:title="Animation Circle Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcusb" android:dependency="b_joss_anima_usb" />
+	<GrxColorPicker android:key="b_joss_color_anima_usb_fondo" android:title="Animation Bg Color" grxAlpha="true" grxFlower="false" grxDefColor="0x50252525" grxGkey="mesa_rcusb" android:dependency="b_joss_anima_usb" />
+    </GrxPreferenceCategory>
+</PreferenceScreen>

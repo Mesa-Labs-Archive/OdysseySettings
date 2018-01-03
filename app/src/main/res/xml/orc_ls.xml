@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GrxPreferenceCategory android:title="Carrier Label Mods">
+		<GrxSwitchPreference android:title="Show Carrier Label" android:key="b_ls_carrier_visibility" android:defaultValue="true" android:summaryOn="(Enabled) Shows Carrier Label in Lockscreen" android:summaryOff="(Disabled) Shows Carrier Label in Lockscreen" grxGkey="mesa_rclockscreen" />
+		<GrxEditText android:title="Custom Carrier Text" android:key="mesa_lscct" android:summary="%" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="" android:dependency="b_ls_carrier_visibility" />
+		<GrxColorPicker android:key="b_ls_carrier_color" android:title="Carrier Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="b_ls_carrier_visibility" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Lockscreen Noti Mods">
+		<GrxSeekBar android:title="Number of Notifications shown" android:key="b_max_notis_ls" android:defaultValue="3" grxMin="1" grxMax="5" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Allow notification quick reply" android:key="lock_screen_allow_remote_input" android:defaultValue="true" android:summaryOn="(Enabled) Allows Quick Reply with locked phone in lockscreen" android:summaryOff="(Disabled) Allows Quick Reply with locked phone in lockscreen" grxGkey="mesa_rclockscreen" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Lockscreen Help Texts Mods">
+		<GrxSwitchPreference android:title="Show Lockscreen Unlock Help Text" android:key="mesa_lssut" android:defaultValue="true" android:summaryOn="(Enabled) Shows Lockscreen Unlock Help Text" android:summaryOff="(Disabled) Shows Lockscreen Unlock Help Text" />
+		<GrxEditText android:title="Custom Lockscreen Unlock Help Text" android:key="mesa_lscut" android:summary="%" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="" android:dependency="mesa_lssut" />
+		<GrxSwitchPreference android:title="Show Lockscreen Charging Text" android:key="mesa_lssct" android:defaultValue="true" android:summaryOn="(Enabled) Shows Lockscreen Charging Text" android:summaryOff="(Disabled) Shows Lockscreen Charging Text" />
+		<GrxEditText android:title="Custom Lockscreen Charging Text" android:key="mesa_lsccrt" android:summary="%" android:widgetLayout="@layout/widget_accent_arrow" android:defaultValue="" android:dependency="mesa_lssct" />
+		<GrxColorPicker android:key="mesa_lsctc" android:title="Unlock Help/Charging Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" />
+    </GrxPreferenceCategory>
+	
+    <GrxPreferenceCategory android:title="Lockscreen Vertical Clock and Date Mods">
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Hours" android:key="vertical_hour_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Digital Clock Hours" android:summaryOff="(Disabled) Shows Lockscreen Digital Clock Hours" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Minutes" android:key="vertical_mins_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Digital Clock Minutes" android:summaryOff="(Disabled) Shows Lockscreen Digital Clock Minutes" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Date" android:key="vertical_date_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Clock Date" android:summaryOff="(Disabled) Shows Lockscreen Clock Date" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Enable Clock Customization" android:key="is_color_switch" android:defaultValue="0" android:summaryOn="(Enabled) Allows to change Lockscreen Clock Color/Scale" android:summaryOff="(Disabled) Allows to change Lockscreen Clock Color/Scale" grxGkey="mesa_rclockscreen" />
+		<GrxColorPicker android:key="is_hr_colors" android:title="Clock Hour Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="is_color_switch" />
+		<GrxColorPicker android:key="is_min_colors" android:title="Clock Minutes Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="is_color_switch" />
+		<GrxColorPicker android:key="is_date_colord" android:title="Clock Date Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="is_color_switch" />
+		<GrxSeekBar android:title="Clock Hour Scale" android:key="is_hr_scaled" android:defaultValue="96" grxMin="0" grxMax="255" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="is_color_switch" />
+		<GrxSeekBar android:title="Clock Minutes Scale" android:key="is_min_scaled" android:defaultValue="96" grxMin="0" grxMax="255" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="is_color_switch" />
+		<GrxSeekBar android:title="Clock Date Scale" android:key="is_date_scaled" android:defaultValue="14" grxMin="0" grxMax="65" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="is_color_switch" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Lockscreen Horizontal Clock and Date Mods">
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Hours" android:key="mesa_hour_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Digital Clock Hours" android:summaryOff="(Disabled) Shows Lockscreen Digital Clock Hours" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Colon" android:key="mesa_colon_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Digital Clock Colon" android:summaryOff="(Disabled) Shows Lockscreen Digital Clock Colon" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Minutes" android:key="mesa_mins_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Digital Clock Minutes" android:summaryOff="(Disabled) Shows Lockscreen Digital Clock Minutes" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Show Lockscreen Clock Date" android:key="mesa_date_view" android:defaultValue="1" android:summaryOn="(Enabled) Shows Lockscreen Clock Date" android:summaryOff="(Disabled) Shows Lockscreen Clock Date" grxGkey="mesa_rclockscreen" />
+		<GrxSwitchPreference android:title="Enable Clock Customization" android:key="color_switch" android:defaultValue="false" android:summaryOn="(Enabled) Allows to change Lockscreen Clock Color/Scale" android:summaryOff="(Disabled) Allows to change Lockscreen Clock Color/Scale" grxGkey="mesa_rclockscreen" />
+		<GrxColorPicker android:key="hr_colors" android:title="Clock Hour Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxColorPicker android:key="colon_color" android:title="Clock Colon Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxColorPicker android:key="min_colors" android:title="Clock Minutes Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxColorPicker android:key="date_colord" android:title="Clock Date Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxSeekBar android:title="Clock Hour Scale" android:key="hr_scaled" android:defaultValue="72" grxMin="0" grxMax="108" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxSeekBar android:title="Clock Colon Scale" android:key="colon_scaled" android:defaultValue="72" grxMin="0" grxMax="108" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxSeekBar android:title="Clock Minutes Scale" android:key="min_scaled" android:defaultValue="72" grxMin="0" grxMax="108" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+		<GrxSeekBar android:title="Clock Date Scale" android:key="date_scaled" android:defaultValue="14" grxMin="0" grxMax="65" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="color_switch" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Lockscreen Owner Info Mods">
+		<GrxColorPicker android:key="is_ownerinfo_color" android:title="Owner Info Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Lockscreen Album Art Mod">
+		<GrxSwitchPreference android:title="Show Lockscreen Album Art" android:key="b_show_album_art" android:defaultValue="false" android:summaryOn="(Enabled) Shows Album Art in lockscreen when music is playing" android:summaryOff="(Disabled) Shows Album Art in lockscreen when music is playing" grxGkey="mesa_rclockscreen" />
+		<GrxSeekBar android:title="Lockscreen Album Art Opacity" android:key="b_album_art_opacity" android:defaultValue="100" grxMin="1" grxMax="100" grxInter="1" grxPopup="false" grxGkey="mesa_rclockscreen" android:dependency="b_show_album_art" />
+    </GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Lockscreen Keypad Mods">
+		<GrxColorPicker android:key="b_keypad_text_color" android:title="Password/PIN Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" />
+		<GrxColorPicker android:key="b_keypad_digit_color" android:title="Keypad Numbers Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" />
+		<GrxColorPicker android:key="b_keypad_digit_subtext_color" android:title="Keypad Letters Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" />
+		<GrxColorPicker android:key="b_kg_delete_button" android:title="Delete Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" />
+		<GrxColorPicker android:key="b_kg_ok_button" android:title="Ok Button Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rclockscreen" />
+    </GrxPreferenceCategory>
+
+
+</PreferenceScreen>

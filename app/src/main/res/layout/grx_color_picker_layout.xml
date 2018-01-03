@@ -8,7 +8,7 @@
 
 
 
-       <com.mods.grx.settings.prefssupport.colorpicker.ColorPickerView
+       <com.odyssey.settings.prefssupport.colorpicker.ColorPickerView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:gravity="center"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:text="@string/gs_lightness"/>
-    <com.mods.grx.settings.prefssupport.colorpicker.slider.LightnessSlider
+    <com.odyssey.settings.prefssupport.colorpicker.slider.LightnessSlider
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:id="@+id/lightness_slider"/>
@@ -79,7 +79,7 @@
         android:visibility="gone"
         android:id="@+id/v_txt_alfa"
         android:text="@string/gs_alpha"/>
-    <com.mods.grx.settings.prefssupport.colorpicker.slider.AlphaSlider
+    <com.odyssey.settings.prefssupport.colorpicker.slider.AlphaSlider
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:visibility="gone"

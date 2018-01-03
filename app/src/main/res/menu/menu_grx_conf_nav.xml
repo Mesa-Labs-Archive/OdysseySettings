@@ -50,19 +50,6 @@
     <Separator/>
 
     <Checkbox
-        android:id="@+id/grx_mid_grupos_abiertos"
-        android:title="@string/gs_grupos_abiertos"
-        android:checked="false"
-        android:checkable="true" />
-    <Checkbox
-        android:id="@+id/grx_mid_botones_grupos"
-        android:title="@string/gs_mostrar_botones_grupos"
-        android:checked="false"
-        android:checkable="true" />
-
-    <Separator/>
-
-    <Checkbox
         android:id="@+id/grx_mid_recordar_pantalla"
         android:title="@string/gs_recordar_pantalla"
         android:checked="false"

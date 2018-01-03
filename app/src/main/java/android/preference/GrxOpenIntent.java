@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.mods.grx.settings.GrxPreferenceScreen;
-import com.mods.grx.settings.R;
-import com.mods.grx.settings.Common;
+import com.odyssey.settings.GrxPreferenceScreen;
+import com.odyssey.settings.R;
+import com.odyssey.settings.Common;
 
 /*      2017 Grouxho (esp-desarrolladores.com)
 

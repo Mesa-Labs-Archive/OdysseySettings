@@ -16,7 +16,7 @@
 
 package com.appeaser.sublimenavigationviewlibrary;
 
-//package com.mods.grx.grxajustes;
+//package com.odyssey.grxajustes;
 
 public class Config {
     public static final boolean DEBUG = true;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GrxPreferenceCategory android:title="Recent Apps Custom Background">
+		<GrxSwitchPreference android:title="Show Custom Background" android:key="recentsbg_apply" android:defaultValue="false" android:summaryOn="(Enabled) Shows a Custom Bg behind Quick Panel" android:summaryOff="(Disabled) Shows a Custom Bg behind Quick Panel" grxGkey="mesa_rcrecentsbg" />
+		<GrxColorPicker android:key="recentsbg_bgcolor" android:title="Background Color" grxAlpha="true" grxFlower="false" grxDefColor="0xff000000" grxGkey="mesa_rcrecentsbg" android:dependency="recentsbg_apply" />
+		<GrxPickImage android:title="Background image" android:key="recentsbg_uri" android:widgetLayout="@layout/widget_accent_arrow" android:dependency="recentsbg_apply" grxGkey="mesa_rcrecentsbg" grxSizeX="720" grxSizeY="1280" />
+	</GrxPreferenceCategory>
+    <GrxPreferenceCategory grxDepRule="disable#recentsbg_uri#STRING#NULL" grxHide="true">
+		<GrxSeekBar android:title="Blur effect ratio" android:key="recentsbg_blur" android:defaultValue="0" grxMax="25" grxInter="1" grxMin="0" grxPopup="false" grxUni=" px" android:dependency="recentsbg_apply" grxGkey="mesa_rcrecentsbg" />
+		<GrxSeekBar android:title="Image Quality" android:key="recentsbg_quality" android:defaultValue="100" grxMax="100" grxInter="5" grxMin="25" grxPopup="false" grxUni="%" android:dependency="recentsbg_apply" grxGkey="mesa_rcrecentsbg" />
+		<GrxColorPicker android:key="recentsbg_tintcolor" android:title="Image Tint Color" grxAlpha="true" grxFlower="false" grxDefColor="0x00FFFFFF" grxGkey="mesa_rcrecentsbg" android:dependency="recentsbg_apply" />
+		<GrxSeekBar android:title="Image Opacity" android:key="recentsbg_opacity" android:defaultValue="100" grxMax="100" grxInter="5" grxMin="0" grxPopup="false" grxUni="%" android:dependency="recentsbg_apply" grxGkey="mesa_rcrecentsbg" />
+	</GrxPreferenceCategory>
+
+    <GrxPreferenceCategory android:title="Recent Apps RAM/Swap Info">
+		<GrxSwitchPreference android:title="Show RAM/Swap Info" android:key="b_ram_mostrar" android:defaultValue="true" android:summaryOn="(Enabled) Shows RAM/Swap Info in Recent Apps" android:summaryOff="(Disabled) Shows RAM/Swap Info in Recent Apps" grxGkey="mesa_rcrecentsram" />
+		<GrxSeekBar android:title="Info Refresh Time" android:key="b_ram_refresco" android:defaultValue="2500" grxMax="20000" grxInter="200" grxMin="500" grxPopup="false" grxUni=" mS" android:dependency="b_ram_mostrar" grxGkey="mesa_rcrecentsram" />
+		<GrxColorPicker android:key="b_ram_color_fondo" android:title="Background Color" grxAlpha="true" grxFlower="false" grxDefColor="0x00252525" grxGkey="mesa_rcrecentsram" android:dependency="b_ram_mostrar" />
+		<GrxColorPicker android:key="b_ram_color_etiquetas" android:title="Main Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcrecentsram" android:dependency="b_ram_mostrar" />
+		<GrxColorPicker android:key="b_ram_color_ocupada" android:title="Used RAM Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcrecentsram" android:dependency="b_ram_mostrar" />
+		<GrxColorPicker android:key="b_ram_color_libre" android:title="Used Swap Text Color" grxAlpha="false" grxFlower="false" grxDefColor="0xfffafafa" grxGkey="mesa_rcrecentsram" android:dependency="b_ram_mostrar" />
+		<GrxSeekBar android:title="Text Size" android:key="b_ram_tam_texto" android:defaultValue="14" grxMax="30" grxInter="1" grxMin="5" grxPopup="false" grxUni=" dp" android:dependency="b_ram_mostrar" grxGkey="mesa_rcrecentsram" />
+	</GrxPreferenceCategory>
+
+</PreferenceScreen>

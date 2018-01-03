@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- app -->
-
     <string-array name="gsa_theme_list">
-        <item>@string/gs_theme_default</item>
-        <item>@string/gs_theme_default_dark</item>
-        <item>@string/gs_theme_light_tile</item>
-        <item>@string/gs_theme_dark_tile</item>
-        <item>@string/gs_theme_light_red</item>
-        <item>@string/gs_theme_dark_red</item>
-        <item>@string/gs_theme_light_orange</item>
-        <item>@string/gs_theme_dark_orange</item>
-        <item>@string/gs_theme_light_purple</item>
-        <item>@string/gs_theme_dark_purple</item>
-        <item>@string/gs_theme_light_brown</item>
-        <item>@string/gs_theme_dark_yellow</item>
-        <item>@string/gs_theme_light_green_orange</item>
-
-
+        <item>@string/orc_theme1</item>
+        <item>@string/orc_theme2</item>
+        <item>@string/orc_theme3</item>
+        <item>@string/orc_theme4</item>
+        <item>@string/orc_theme5</item>
+        <item>@string/orc_theme6</item>
     </string-array>
 
     <string-array name="gsa_panel_header_options">
@@ -27,20 +16,521 @@
     </string-array>
 
     <string-array name="tabs_names">
-        <item>About this app</item>
-        <item>ChangeLog</item>
-        <item>Credits and Thanks</item>
+        <item>ROM Info</item>
+        <item>Credits</item>
+        <item>Useful Links</item>
     </string-array>
 
     <string-array name="tabs_layouts">
-        <item>demo_info_about</item>
-        <item>demo_info_changelog</item>
-        <item>demo_info_credits</item>
+        <item>odyssey_info1</item>
+        <item>odyssey_info2</item>
+        <item>odyssey_info3</item>
     </string-array>
 
-    <!-- demo -->
+    <string-array name="custom_bg_type_entries">
+        <item>Image</item>
+        <item>Solid color</item>
+        <item>Gradient</item>
+    </string-array>
+    <string-array name="custom_bg_type_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="gradient_entries">
+        <item>Top to bottom</item>
+        <item>Bottom to top</item>
+        <item>Left to right</item>
+        <item>Right to left</item>
+    </string-array>
+    <string-array name="gradient_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="crop_entries">
+        <item>Center crop</item>
+        <item>Center inside</item>
+        <item>Fit XY</item>
+    </string-array>
+    <string-array name="crop_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 
+    <string-array name="immersive_entries">
+        <item>Disabled</item>
+        <item>Full screen</item>
+        <item>Hide status bar</item>
+        <item>Hide navigation bar</item>
+    </string-array>
+    <string-array name="immersive_values">
+        <item>immersive.full</item>
+        <item>immersive.full=*</item>
+        <item>immersive.status=*</item>
+        <item>immersive.navigation=*</item>
+    </string-array>
 
+    <string-array name="zoniklist_animation_entries">
+        <item>Off</item>
+        <item>Grow</item>
+        <item>Cards</item>
+        <item>Curl</item>
+        <item>Wave</item>
+        <item>Flip</item>
+        <item>Fly</item>
+        <item>Reverse fly</item>
+        <item>Helix</item>
+        <item>Fan</item>
+        <item>Tilt</item>
+        <item>Zipper</item>
+        <item>Fade</item>
+        <item>Twirl</item>
+        <item>Slide in</item>
+    </string-array>
+    <string-array name="zoniklist_animation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
 
+    <string-array name="toast_animation_entries">
+        <item>None</item>
+        <item>Default</item>
+        <item>Fade</item>
+        <item>Slide right</item>
+        <item>Slide left</item>
+        <item>Xylon</item>
+        <item>Toko</item>
+        <item>Tn</item>
+        <item>Honami</item>
+        <item>Fast fade</item>
+        <item>Grow fade</item>
+        <item>Grow fade center</item>
+        <item>Grow fade bottom</item>
+        <item>Translucent</item>
+        <item>Slide left to right</item>
+        <item>Slide right to left</item>
+    </string-array>
+    <string-array name="toast_animation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
 
+    <string-array name="custom_logo_type_entries">
+        <item>Select from Gallery</item>
+        <item>Odyssey</item>
+        <item>Biohazard</item>
+        <item>Woman</item>
+        <item>Axwell Ingrosso</item>
+        <item>Lambda</item>
+        <item>Nike</item>
+        <item>Adidas</item>
+        <item>Android</item>
+        <item>Beats</item>
+        <item>Skull</item>
+        <item>Smile</item>
+        <item>Batman</item>
+        <item>Superman</item>
+        <item>Heart</item>
+        <item>Ferrari</item>
+        <item>Apple</item>
+        <item>PlayStation</item>
+        <item>Abstergo</item>
+    </string-array>
+    <string-array name="custom_logo_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </string-array>
+
+    <string-array name="signal_position_entries">
+        <item>Left</item>
+        <item>Right</item>
+    </string-array>
+    <string-array name="signal_position_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="hidden_icons_options">
+        <item>Rotation</item>
+        <item>Wifi Direct</item>
+        <item>Battery</item>
+        <item>Alarm Clock</item>
+        <item>Wifi Calling</item>
+        <item>Mobile Signal</item>
+        <item>Power Saving</item>
+        <item>Airplane Mode</item>
+        <item>Headset</item>
+        <item>Data Saver</item>
+        <item>Volume</item>
+        <item>Wifi Signal</item>
+        <item>Nfc</item>
+        <item>Bluetooth</item>
+        <item>Private Mode</item>
+        <item>Location</item>
+        <item>Secure</item>
+        <item>Smart Network</item>
+        <item>Gps</item>
+        <item>Samsung Gear</item>
+        <item>RCS</item>
+    </string-array>
+    <string-array name="hidden_icons_values">
+        <item>rotate</item>
+        <item>wifi_p2p</item>
+        <item>battery</item>
+        <item>alarm_clock</item>
+        <item>ims_volte</item>
+        <item>mobile</item>
+        <item>power_saver</item>
+        <item>airplane</item>
+        <item>headset</item>
+        <item>data_saver</item>
+        <item>volume</item>
+        <item>wifi</item>
+        <item>nfc_on</item>
+        <item>bluetooth</item>
+        <item>private_mode</item>
+        <item>location</item>
+        <item>secure</item>
+        <item>smart_network</item>
+        <item>gps</item>
+        <item>wearable_gear</item>
+        <item>com.samsung.rcs</item>
+    </string-array>
+
+    <string-array name="clock_format_entries">
+        <item>Normal clock</item>
+        <item>Funky clock</item>
+        <item>Word clock</item>
+    </string-array>
+    <string-array name="clock_format_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="clock_style_entries">
+        <item>Left clock</item>
+        <item>Center clock</item>
+        <item>Right clock</item>
+    </string-array>
+    <string-array name="clock_style_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="clock_font_style_entries">
+        <item>Normal</item>
+        <item>Italic</item>
+        <item>Bold</item>
+        <item>Bold Italic</item>
+        <item>Light</item>
+        <item>Light Italic</item>
+        <item>Thin</item>
+        <item>Thin Italic</item>
+        <item>Condensed</item>
+        <item>Condensed Italic</item>
+        <item>Condensed bold</item>
+        <item>Condensed bold italic</item>
+        <item>Medium</item>
+        <item>Medium Italic</item>
+    </string-array>
+    <string-array name="clock_font_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <string-array name="clock_ampm_entries">
+        <item>Hide AM/PM</item>
+        <item>Small AM/PM</item>
+        <item>Regular AM/PM</item>
+    </string-array>
+    <string-array name="clock_ampm_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_display_entries">
+        <item>Hide Date</item>
+        <item>Little Date</item>
+        <item>Big Date</item>
+    </string-array>
+    <string-array name="clock_date_display_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_position_entries">
+        <item>Date View on the Left of Clock</item>
+        <item>Date View on the Right of Clock</item>
+    </string-array>
+    <string-array name="clock_date_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="clock_date_style_entries">
+        <item>Normal</item>
+        <item>Line</item>
+        <item>Capital</item>
+    </string-array>
+    <string-array name="clock_date_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_format_entries_values">
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMM dd</item>
+        <item>MMM dd, yyyy</item>
+        <item>MMMM dd, yyyy</item>
+        <item>EEE</item>
+        <item>EEEE</item>
+        <item>EEE dd</item>
+        <item>EEE dd/MM</item>
+        <item>EEE MM/dd</item>
+        <item>EEE dd MMM</item>
+        <item>EEE dd MMMM</item>
+        <item>EEEE dd MMMM</item>
+        <item>EEE MMM dd</item>
+        <item>EEE MMMM dd</item>
+        <item>EEEE MMMM dd</item>
+        <item>EEEE dd/MM</item>
+        <item>EEEE MM/dd</item>
+    </string-array>
+
+    <string-array name="dsb_gradient_filter_entries">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="dsb_gradient_filter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="anim_strings">
+        <item>Normal</item>
+        <item>Accelerate and Decelerate</item>
+        <item>Decelerate</item>
+        <item>Accelerate</item>
+    </string-array>
+    <string-array name="anim_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pulse_strings">
+        <item>Standard</item>
+        <item>Pulse Up and Down</item>
+    </string-array>
+    <string-array name="pulse_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="traffic_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="traffic_state_items">
+        <item>Disable view</item>
+        <item>Upload only</item>
+        <item>Download only</item>
+        <item>Upload and Download</item>
+    </string-array>
+    <string-array name="arrow_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="arrow_position_entries">
+        <item>To end of view</item>
+        <item>To start of view</item>
+    </string-array>
+    <string-array name="traffic_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="traffic_style_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="sa_notif_bg_shapes">
+        <item>Stock</item>
+        <item>Rounded Corners</item>
+        <item>Flat</item>
+    </string-array>
+    <string-array name="sa_notif_bg_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="qs_tile_animation_duration_entries">
+        <item>Low</item>
+        <item>Default</item>
+        <item>Fast</item>
+        <item>Superfast</item>
+    </string-array>
+    <string-array name="qs_tile_animation_duration_values">
+        <item>2000</item>
+        <item>1500</item>
+        <item>1000</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="qs_tile_animation_interpolator_entries">
+        <item>Linear</item>
+        <item>Accelerate</item>
+        <item>Decelerate</item>
+        <item>Accelerate Decelerate</item>
+        <item>Bounce</item>
+        <item>Overshoot</item>
+        <item>Anticipate</item>
+        <item>Anticipate Overshoot</item>
+    </string-array>
+    <string-array name="qs_tile_animation_interpolator_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="qs_tile_animation_style_entries">
+        <item>Default</item>
+        <item>Rotate</item>
+        <item>Flip</item>
+    </string-array>
+    <string-array name="qs_tile_animation_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="data_usage_gravity_entries">
+        <item>To end</item>
+        <item>Center horizontal</item>
+        <item>To start</item>
+    </string-array>
+    <string-array name="data_usage_gravity_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_usage_text_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="data_usage_text_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="volpanel_timeout_entries">
+        <item>1000ms</item>
+        <item>1500ms</item>
+        <item>2000ms</item>
+        <item>2500ms</item>
+        <item>3000ms</item>
+        <item>3500ms</item>
+        <item>4000ms</item>
+        <item>4500ms</item>
+        <item>5000ms (Stock)</item>
+    </string-array>
+    <string-array name="volpanel_timeout_values">
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+    </string-array>
 </resources>

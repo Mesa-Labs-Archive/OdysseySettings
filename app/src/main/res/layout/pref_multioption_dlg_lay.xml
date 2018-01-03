@@ -98,7 +98,7 @@
         android:orientation="vertical">
 
 
-     <com.mods.grx.settings.sldv.SlideAndDragListView
+     <com.odyssey.settings.sldv.SlideAndDragListView
         android:id="@+id/list_drag"
         android:layout_width="fill_parent"
          android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
         android:listSelector="?android:selectableItemBackground"
         android:paddingLeft="8dip"
         android:paddingRight="8dip">
-    </com.mods.grx.settings.sldv.SlideAndDragListView>
+    </com.odyssey.settings.sldv.SlideAndDragListView>
 
     <ListView
         android:id="@+id/listview"
